@@ -21,6 +21,7 @@ Requirements
 ------------
 	* PHP v5 or newer.
 	* working lampp or Xampp or Mammp
+	* No Mysql required
 	
 
 Description
@@ -47,3 +48,23 @@ The startup page contains three input fields:
 	
 Entering the Time and moving to other field will trigger the data into Rate of interest field	
 Clicking on the "Calculate" button would display the "Future Contract price".
+
+working
+----------
+
+This application uses a XML to retrieve data, instead of using MySQL database
+because, it need only one independent data table. So, it can be achieved through XML
+
+It gets 2 inputs from the user, the spot price and the time of the year in days.
+then automatically, the rate will be calculated by interpolation if it doesnt exists in the table.
+
+Then on final click the result will be  displayed below in a green bar.
+
+
+Bugs
+-------
+
+So far no Known bugs, for valid inputs,. and all fields are validated.
+
+
+
